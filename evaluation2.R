@@ -50,7 +50,7 @@ rownames(aucdiremean)=rownames(aucdiressmean)=rownames(paucdire)=rownames(paucdi
 aucdips=list()
 for (l in 1:length(q)){
 	aucdips[[l]]=list()
-	d=-dips0[[l]][lower.tri(dips0[[l]],diag=F)],diag=F)]
+	d=-dips0[[l]][lower.tri(dips0[[l]],diag=F)]
 	aucdips[[l]][[1]]=aucdist(d,ss,cla)
 	for (t in 1:6){
 		d=-dips_sep0[[l]][[t]][lower.tri(dips_sep0[[l]][[t]],diag=F)]
