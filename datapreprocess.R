@@ -36,10 +36,6 @@ pdf("iqrmax.pdf")
 plot(k,iqrmax,type="b")
 dev.off()
 
-pdf("maxiqr.pdf",width=6,height=6)
-plot(0:40,c(max(bp1$stats[4,]-bp1$stats[2,]),iqrmax[1:40]),xlab="k",ylab="maxIQR",type="b")
-dev.off()
-
 
 uniname=sort(unique(chipname))
 gprobe=as.vector(data[,2])
